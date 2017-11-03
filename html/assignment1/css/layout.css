@@ -1,4 +1,4 @@
-.main-container-wrapper{background: red; width: 1002px; margin: 0px auto;}
+.main-container-wrapper{background: white; min-width: 1002px; margin: 0px auto;}
 
 .header-wrapper{background: pink;}
 .header-top{background:#7dd9e8;}
