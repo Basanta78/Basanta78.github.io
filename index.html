@@ -1,30 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8" http-equiv="Content-Type" content="text/html" />
 	<title>Home Page</title>
+	<meta charset="UTF-8"> 
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/layout.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-
 	<div class = "main-container-wrapper">
 		<div class = "header-wrapper">
 			<div class="header-top">
 				<div class="header-top-container clearfix">
-					<div class="logo"><img src="images/logo.png"></div>
+					<div class="logo"><img src="images/logo.png" alt="logo"></div>
 
 					<div class="search-wrapper">
-						<form>
+						<form action="#" method="get">
 							<div class="search-box">		
-								<input type="text" name="search" placeholder="Search by Term, Member, or Entry Title" class="input-text">
+								<input type="text" name="search" placeholder="Search by Term, Member, or Entry Title">
+							</div>
+
+							<div class="search-btn">
+								<input type="submit" value="SEARCH" class="search-btn">			
 							</div>
 						</form>
-						<div class="search-btn">
-							<input type="submit" value="SEARCH" class="search-btn">			
-						</div>
 					</div>
 					
 					<div class="user-profile">
@@ -85,23 +85,23 @@
 							<li class="block-lists clearfix">
 								<a href="#"><span class="lists">Different versions of the Tristan Und Isolde prelude</span></a>
 								<a href="#"><span class="left-icon-bottom"><img src="images/burgericon.png" alt="drag-btn"></span></a></li>
-							<li class="block-lists clearfix">
+								<li class="block-lists clearfix">
 									<a href="#"><span class="lists">Music</span></a>
 									<a href="#"><span class="left-icon-bottom"><img src="images/burgericon.png" alt="drag-btn"></span></a>
 								</li>
-							<li class="block-lists clearfix">
+								<li class="block-lists clearfix">
 									<a href="#"><span class="lists">Guitar</span></a>
 									<a href="#"><span class="left-icon-bottom"><img src="images/burgericon.png" alt="drag-btn"></span></a>
 								</li>
-							<li class="block-lists clearfix">
+								<li class="block-lists clearfix">
 									<a href="#"><span class="lists">Bob Cohen</span></a>
 									<a href="#"><span class="left-icon-bottom"><img src="images/burgericon.png" alt="drag-btn"></span></a>
 								</li>
-							<li class="block-lists clearfix">
+								<li class="block-lists clearfix">
 									<a href="#"><span class="lists">Mark Schnac</span></a>
 									<a href="#"><span class="left-icon-bottom"><img src="images/burgericon.png" alt="drag-btn"></span></a>
 								</li>
-							<li class="block-lists clearfix">
+								<li class="block-lists clearfix">
 									<a href="#"><span class="lists">Jefferson Dickey</span></a>
 									<a href="#"><span class="left-icon-bottom"><img src="images/burgericon.png" alt="drag-btn"></span></a>
 								</li>
@@ -114,11 +114,11 @@
 								Entries
 							</div>
 							<div class="menu-type">
-								<div class="menu-title">
-									<span>All Entries</span>
-									<span>Subscribed</span>
+								<div class="menu-title clearfix">
+									<span class="left-entry">All Entries</span>
+									<span class="right-entry">Subscribed</span>
 								</div>
-								<div class="menu-bar">
+								<div class="menu-bar clearfix">
 									<div class="left-menu-bar">
 										
 										<ul>
@@ -129,8 +129,8 @@
 									<div class="right-menu-bar">
 										<ul>
 											
-											<li><a href="#">New Entries</a></li>
 											<li><a href="#">New Comments</a></li>
+											<li><a href="#">New Entries</a></li>
 										</ul>
 									</div>
 								</div>
@@ -141,9 +141,7 @@
 										<span class="entry-image">
 											<img src="images/entry-list1.png" alt="member-image">
 										</span>
-										<p>
-											<span class="member-title"><a href="#">Day for Night by Francois Truffaut, a ground breaking film</a></span>
-										</p>
+										<h2><a href="#">Day for Night by Francois Truffaut, a ground breaking film</a></h2>
 										<p>
 											<span class="member-by">
 												by <a href="#">Alan Coe</a>
@@ -151,81 +149,76 @@
 											<span class="member-date">
 												February 10, 2012
 											</span>
-											<span class="subscribed">
-												Subscribed
+											<a href="#"><span class="subscribed">
+												Subscribed </span></a>
+
+											</p>
+											<p>
+												<span class="topic-box">
+													From Topic Box: <a href="#">My Favourite Movies</a>
+												</span>
+											</p>
+										</li>	
+										<li class="clearfix">
+											<span class="entry-image">
+												<img src="images/entry-list2.png" alt="member-image">
 											</span>
-										</p>
-										<p>
-											<span class="topic-box">
-												From Topic Box: <a href="#">My Favourite Movies</a>
+											<span class="new-alert">
+												<a href="#">NEW ENTRY!</a>
+											</span>										
+											<h2><a href="#">Blade Runner, The Director's Cut</a></h2>
+											<p>
+												<span class="member-by">
+													by <a href="#">Mary Pilot</a>
+												</span>
+												<span class="member-date">
+													February 8, 2012
+												</span>
+											</p>
+											<p>
+												<span class="topic-box">
+													From Topic Box: <a href="#">Behind the Scene</a>
+												</span>
+											</p>
+										</li>	
+										<li class="clearfix">
+											<span class="entry-image">
+												<img src="images/entry-list3.png" alt="member-image">
 											</span>
-										</p>
-									</li>	
-									<li class="clearfix">
-										<span class="entry-image">
-											<img src="images/entry-list2.png" alt="member-image">
-										</span>
-										<span class="new-alert">
-											<a href="#">NEW ENTRY!</a>
-										</span>
-										<p>
-											<span class="member-title"><a href="#">Blade Runner, The Director's Cut</a></span>
-										</p>
-										<p>
-											<span class="member-by">
-												by <a href="#">Mary Pilot</a>
+											<span class="new-alert">
+												<a href="#">NEW COMMENT!</a>
 											</span>
-											<span class="member-date">
-												February 8, 2012
-											</span>
-										</p>
-										<p>
-											<span class="topic-box">
-												From Topic Box: <a href="#">Behind the Scene</a>
-											</span>
-										</p>
-									</li>	
-									<li class="clearfix">
-										<span class="entry-image">
-											<img src="images/entry-list3.png" alt="member-image">
-										</span>
-										<span class="new-alert">
-											<a href="#">NEW COMMENT!</a>
-										</span>
-										<p>
-											<span class="member-title"><a href="#">The Best French Restaurant in Chicago</a></span>
-										</p>
-										<p>
-											<span class="member-by">
-												by <a href="#">Jim Roy</a>
-											</span>
-											<span class="member-date">
-												February 7, 2012
-											</span>
-										</p>
-										<p>
-											<span class="topic-box">
-												From Topic Box: <a href="#">Chicago Restaurant Reviews</a>
-											</span>
-										</p>	
-									</li>
-									<li class="clearfix">
-										<span class="entry-image">
-											<img src="images/entry-list4.png" alt="member-image">
-										</span>
-										<p>
-											<span class="member-title"><a href="#">The Meaning of Night. Dark Book but incredibly well written.</a></span>
-										</p>	
-										<p>
-											<span class="member-by">
-												by <a href="#">John-Peter Moise</a>
-											</span>
-											<span class="member-date">
-												February 7, 2012
-											</span>
-											<span class="subscribed">
-												Subscribed
-											</span>
+											<h2><a href="#">The Best French Restaurant in Chicago</a></h2>
+											<p>
+												<span class="member-by">
+													by <a href="#">Jim Roy</a>
+												</span>
+												<span class="member-date">
+													February 7, 2012
+												</span>
+											</p>
+											<p>
+												<span class="topic-box">
+													From Topic Box: <a href="#">Chicago Restaurant Reviews</a>
+												</span>
+											</p>	
+										</li>
+										<li class="clearfix">
+											<span class="entry-image">
+												<img src="images/entry-list4.png" alt="member-image">
+											</span>						
+											<h2><a href="#">The Meaning of Night. Dark Book but incredibly well written.</a></h2>
+											<p>
+												<span class="member-by">
+													by <a href="#">John-Peter Moise</a>
+												</span>
+												<span class="member-date">
+													February 7, 2012
+												</span>
+												<a href=""><span class="subscribed">
+													Subscribed
+												</span>
+											</a>
 										</p>
 										<p>
 											<span class="topic-box">
@@ -239,10 +232,8 @@
 										</span>
 										<span class="new-alert invite">
 											<a href="#">TOPIC BOX INVITE!</a>
-										</span>
-										<p>
-											<span class="member-title"><a href="#">Pea Pesto</a></span>
-										</p>
+										</span>										
+										<h2><a href="#">Pea Pesto</a></h2>									
 										<p>
 											<span class="member-by">
 												by <a href="#">Marianne Gig</a>
@@ -278,8 +269,8 @@
 								</ul>
 							</div>
 						</div>
-			</div>
-			</div>
+					</div>
+				</div>
 			</div>
 			<div class="footer-wrapper">
 				<div class="footer clearfix">
@@ -294,10 +285,10 @@
 
 					</div>
 					<div class="footer-right">
-					&copy; Tutangle 2013
-				</div>
+						&copy; Tutangle 2013
+					</div>
 				</div>
 			</div>
-			</div>
-		</body>
-		</html>
+		</div>
+	</body>
+	</html>
