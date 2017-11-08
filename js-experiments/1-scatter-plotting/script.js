@@ -1,12 +1,3 @@
-var data=[
-{top:2, left:5},
-{top:40	, left:9},
-{top:40, left:80},
-{top:90, left:90},
-{top:200, left:200},
-{top:300, left:300}
-];
-
 var box = document.getElementsByClassName('box')[0];
 var body = document.getElementsByTagName('body')[0];
 var list = document.createElement("ul");
