@@ -17,34 +17,52 @@ imagecollection.style.position = "absolute";
 imagecollection.style.top  = "0px";
 imagecollection.style.left = "0px";	
 imagecollection.style.right = "0px";
+imagecollection.style.width = "1350px";
+imagecollection.style.height = "280px";
 
 
 
 var image1 = document.createElement("img");
 image1.setAttribute("src","relproject1.jpg");
+image1.style.float = "left";
 imagecollection.appendChild(image1); 	
 var image2 = document.createElement("img");
 image2.setAttribute("src","relproject2.jpg");
+image2.style.float = "left";
+
 imagecollection.appendChild(image2); 	
 
 var image3 = document.createElement("img");
 image3.setAttribute("src","relproject3.jpg");
+image3.style.float = "left";
+
 imagecollection.appendChild(image3); 	
 
 var image4 = document.createElement("img");
 image4.setAttribute("src","relproject4.jpg");
-imagecollection.appendChild(image4); 	
+image4.style.float = "left";
+
+imagecollection.appendChild(image4); 
+
+var counter = 0;	
 
 nextbutton.onclick = function()
 {
 	var i=0;
+	counter++;
+	console.log(counter);
+	if (counter>=4) 
+	{
+		imagecollection.style.left= "270px";
+		counter=0;
+	}
 	function moveright(){
 		
-		if(i<27){
+		if(i<27)
+		{
 			imagecollection.style.left= parseInt(imagecollection.style.left)-10+'px';
-			console.log(imagecollection.style.left);
 			i++;
-			a =setTimeout(function(){moveright();},20);
+			a =setTimeout(moveright,20);
 		}
 		else{
 			clearTimeout(a);
@@ -53,18 +71,28 @@ nextbutton.onclick = function()
 	moveright();
 
 }
+
 previousbutton.onclick = function()
 {
 	var i=0;
-	function moveleft(){
-		if(i<27){
+	counter--;
+	console.log(counter);
+		if (counter<=-1) 
+	{
+		imagecollection.style.left=-270*4+"px";
+		counter=3;
+	}
+	function moveleft()
+	{
+		if(i<27)
+		{
 
 			imagecollection.style.left= parseInt(imagecollection.style.left)+10+'px';
-			console.log("r",imagecollection.style.left);
 			i++;
-			a =setTimeout(function(){moveleft();},20);
+			a =setTimeout(moveleft,20);
 		}
-		else{
+		else
+		{
 			clearTimeout(a);
 		}
 	}
