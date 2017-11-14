@@ -1,0 +1,16 @@
+.mainwrapper{
+	width: 900px;
+	height: 500px;
+	background: url("../images/flappy_bg.png");
+	margin: 0 auto;
+	position: relative;
+	background-size: cover;
+}
+
+.bird{
+	width: 70px;
+	height: 50px;
+	background: url("../images/bird.png");
+	background-size:cover;
+	position: absolute;
+}
