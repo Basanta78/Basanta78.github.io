@@ -76,11 +76,13 @@ class BattleCity {
     } else if ( event.keyCode == 13 ) {
       if ( this.y == 220 ) {
         canvas.style.display = 'block';
+        sound.play("stageStart");
         gameloop();
         this.mainWrapper.style.display = "none";
       } else if ( this.y == 295 ) {
         enableTwoPlayer = true;
         canvas.style.display = 'block';
+        sound.play("stageStart");
         gameloop();
         this.mainWrapper.style.display = "none";
       } else if ( this.y == 370 ) {

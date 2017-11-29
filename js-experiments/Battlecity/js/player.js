@@ -14,7 +14,7 @@ class MainPlayer{
     this.direction = null;
     this.playerBullet = null;
     this.isBulletDetroyed = true;
-    this.lives = 1;
+    this.lives = 3;
     this.isDead =false;
   }
   //display player in canvas
