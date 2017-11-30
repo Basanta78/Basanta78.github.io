@@ -1,4 +1,3 @@
-
 function CreatedLevels() {
   var view = View.getInstance();
 
@@ -40,6 +39,7 @@ function CreatedLevels() {
         levelButton.onclick = (function(i) {
           return function() {
             that.startLevel(i);
+            console.log("usdfdsf",i);
             // that.removeCreatedLevelsScreen();
             var level = storage.getItem(levelName);
             game.map = JSON.parse(level);

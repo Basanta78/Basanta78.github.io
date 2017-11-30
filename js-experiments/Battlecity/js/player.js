@@ -14,7 +14,7 @@ class MainPlayer{
     this.direction = null;
     this.playerBullet = null;
     this.isBulletDetroyed = true;
-    this.lives = 3;
+    this.lives = 1;
     this.isDead =false;
   }
   //display player in canvas
@@ -88,6 +88,9 @@ class MainPlayer{
   if(this.playerBullet !=null){
     this.playerBullet.renderBullet();
     this.playerBullet.checkWallCollision();
+    if(this.playerBullet.baseDestroyCollision()){
+      gameOver =true;
+    }
     this.playerBullet.moveBullet();
     this.isBulletDetroyed = this.playerBullet.checkBulletDestroyed();
     if(this.isBulletDetroyed){

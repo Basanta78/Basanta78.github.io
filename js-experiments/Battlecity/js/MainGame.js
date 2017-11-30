@@ -54,12 +54,14 @@ let enableTwoPlayer = false;
 let Counter = 0;
 let enemyPerGame = 5;
 let score = 0;
+let gameOver = false;
 
 let imageLoad = new loadImage();
 let sound = new GameSound();
 let game = new MainGame();
 let player = new MainPlayer();
 let playerTwo = new PlayerTwo();
+
 
 imageLoad.init();
 playerTwo.init();
@@ -118,8 +120,9 @@ let gameloop = () => {
       }
     }
   }
+  console.log(gameOver);
   animation = requestAnimationFrame( gameloop );
-  if ( player.lives <= 0 ) {
+  if ( player.lives <= 0 ||gameOver ) {
     cancelAnimationFrame( animation );
     ctx.font = "30px Arial";
     ctx.fillStyle = "white";

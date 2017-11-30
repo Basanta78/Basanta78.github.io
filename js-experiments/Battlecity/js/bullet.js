@@ -85,6 +85,24 @@ class Bullet {
       return false;
     }
   }
+  baseDestroyCollision() {
+    var y = Math.floor( this.x / ( 4 * this.width ) );
+    var x = Math.floor( this.y / ( 4 * this.width ) );
+    if ( x >= 0 && x <= 18 && y >= 0 && y <= 18 ) {
+      var getMapValue = this.map[ x ][ y ];
+      if ( getMapValue == 5) {
+        console.log(getMapValue);
+        sound.play( "wallHit" );
+        imageLoad.draw( "big_explosion_5", this.x, this.y, this.width * 4, this.height * 4 );
+        return true;
+
+      } else {
+        return false;
+      }
+    } else {
+      return false;
+    }
+  }
   hitTankCheck( player ) {
     if ( ( this.x + 8 > player.x ) && ( this.x < player.x + 32 ) && ( this.y + 8 > player.y ) && ( this.y < player.y + 32 ) ) {
       sound.play( "explosion" );

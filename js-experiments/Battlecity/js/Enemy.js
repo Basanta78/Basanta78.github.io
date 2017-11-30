@@ -81,6 +81,9 @@ class Enemy {
       this.enemyBullet.updateBullet();
     }
     this.enemyBullet.checkWallCollision();
+    if(this.enemyBullet.baseDestroyCollision()){
+      gameOver =true;
+    }
     this.enemyBullet.renderBullet();
     this.enemyBullet.moveBullet();
     // kill player condition
