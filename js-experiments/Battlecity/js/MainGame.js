@@ -52,7 +52,7 @@ let bulletArray = [];
 let enemyNumber = 0;
 let enableTwoPlayer = false;
 let Counter = 0;
-let enemyPerGame = 5;
+let enemyPerGame = 12;
 let score = 0;
 let gameOver = false;
 
