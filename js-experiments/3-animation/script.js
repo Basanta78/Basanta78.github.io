@@ -15,7 +15,7 @@ function drawBall(){
 		else{var strandPhase = phase +Math.PI};
 			
 		for(var col=0; col<numCols; col++){
-			colOffset = (col*Math.PI*2)/numCols;
+			var colOffset = (col*Math.PI*2)/numCols;
 			var x = canvas.width-(20*col)-100;	
 			for(var row = 0; row <numRows;row++){
 				ctx.beginPath();
