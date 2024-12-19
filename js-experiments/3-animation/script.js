@@ -10,14 +10,14 @@ var numCols =15;
 function drawBall(){	
 	ctx.clearRect(0,0,canvas.width,canvas.height);
 	phase = frameCount * speed;
-	for(var i =0; i<2;i++){
+	for(let i =0; i<2;i++){
 		if(i==0){var strandPhase = phase;}
 		else{var strandPhase = phase +Math.PI};
 			
-		for(var col=0; col<numCols; col++){
+		for(let col=0; col<numCols; col++){
 			var colOffset = (col*Math.PI*2)/numCols;
 			var x = canvas.width-(20*col)-100;	
-			for(var row = 0; row <numRows;row++){
+			for(let row = 0; row <numRows;row++){
 				ctx.beginPath();
 				var y = canvas.height/2+row*10+	Math.sin(strandPhase+colOffset)*50;
 				frameCount++;
